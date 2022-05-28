@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calorie Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../week6/css/base.css">
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h1>Calorie Calculator</h1>
+      <p>Use the calorie calculator to estimate the number of daily calories your body needs to lose, gain or maintain your current weight.</p>
+    </div>
+    <section class="section1">
+      <div>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age">
+      </div>
+      <div>
+        <label for="height">Height in cm:</label>
+        <input type="text" id="height" name="height">
+      </div>
+      <div>
+        <label for="weight">Weight in kg:</label>
+        <input type="text" id="weight" name="weight">
+      </div>
+      <div>
+        <label class="container">Sex:   
+          <label for="male">Male</label>
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+          <label for="female">Female</label>
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div>
+        <label for="activity-level">Activity Level:</label>
+        <select name="activity-level" id="activity-level">
+          <option value=""></option>
+          <option value="sedentary">Sedentary = little to no exercise + work a desk job</option>
+          <option value="Lightly Active">Lightly Active = light exercise 1-3 days / week</option>
+          <option value="moderately-active">Moderately Active = moderate exercise 3-5 days / week</option>
+          <option value="very-active">Very Active = heavy exercise 6-7 days / week</option>
+          <option value="extremely active">Extremely Active = strenuous training 2x / day</option>
+        </select>
+      </div>
+      <div>
+        <label for="goal">Goal:</label>
+        <select name="goal" id="goal">
+          <option value="select"></option>
+          <option value="loose">Loose</option>
+          <option value="maintain">Maintain</option>
+          <option value="gain">Gain</option>
+        </select>
+      </div>
+      <div>
+        <input type="button" id="calculateButton" value="Calculate">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
