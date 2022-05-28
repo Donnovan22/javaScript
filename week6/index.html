@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../week6/css/base.css">
+  <script src="../week6/js/scripts.js"></script>
 </head>
 <body>
   <main>
@@ -32,12 +33,17 @@
       <div>
         <label class="container">Sex:   
           <label for="male">Male</label>
-          <input type="checkbox" checked="checked">
+          <input type="checkbox" checked="checked" id="gender-male">
           <span class="checkmark"></span>
           <label for="female">Female</label>
-          <input type="checkbox" checked="checked">
+          <input type="checkbox" checked="checked" id="gender-female">
           <span class="checkmark"></span>
         </label>
+        <div>
+          <label for="gender">Gender:</label>
+          <input type="text" id="gender" name="gender">
+        </div>
+        
       </div>
       <div>
         <label for="activity-level">Activity Level:</label>
@@ -60,7 +66,11 @@
         </select>
       </div>
       <div>
-        <input type="button" id="calculateButton" value="Calculate">
+        <input type="button" id="calculateButton" value="Calculate" onclick="determine_bmr();">
+      </div>
+      <div>
+        <label for="bmr">bmr:</label>
+        <input type="text" id="bmr" name="bmr">
       </div>
     </section>
   </main>
