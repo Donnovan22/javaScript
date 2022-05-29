@@ -56,13 +56,13 @@ function get_activity_level() {
   };
 }
 
-function measure_tdde(bmr, activity_level) {
+function measure_tdee(bmr, activity_level) {
   return  bmr * activity_level;
 }
 
 // tdee = Total Daily Energy Expenditure
 function tdee() {
-  let tdee = measure_tdde(determine_bmr(), get_activity_level());
+  let tdee = measure_tdee(determine_bmr(), get_activity_level());
   let roundTDEE = Math.round(tdee);
   return roundTDEE;
 }
