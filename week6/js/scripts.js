@@ -60,7 +60,7 @@ function measure_tdde(bmr, activity_level) {
   return  bmr * activity_level;
 }
 
-
+// tdee = Total Daily Energy Expenditure
 function tdee() {
   let tdee = measure_tdde(determine_bmr(), get_activity_level());
   let roundTDEE = Math.round(tdee);
@@ -73,13 +73,13 @@ function determine_goal_weight() {
   let goal;
   if(value == "loose"){
     goal = tdee() - 500;
-  }
+  };
   if(value == "maintain"){
     goal = tdee();
-  }
+  };
   if(value == "gain"){
     goal = tdee() + 500;
-  }
+  };
   
   document.querySelector("#tdee").value = goal;
   return goal;
