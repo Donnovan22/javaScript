@@ -18,6 +18,9 @@
       <p>Use the calorie calculator to estimate the number of daily calories your body needs to lose, gain or maintain your current weight.</p>
     </div>
     <section class="section1">
+      <div class="upper-box">
+        <h3 class="box-text">Modify the values and click the calculate button</h3>
+      </div>
       <div>
         <label for="age">Age:</label>
         <input type="text" id="age" name="age">
@@ -37,7 +40,7 @@
       <div>
         <label for="activity-level">Activity Level:</label>
         <select name="activity-level" id="activity-level">
-          <option value=""></option>
+          <option value="">-</option>
           <option value="sedentary">Sedentary = little to no exercise + work a desk job</option>
           <option value="lightly-active">Lightly Active = light exercise 1-3 days / week</option>
           <option value="moderately-active">Moderately Active = moderate exercise 3-5 days / week</option>
@@ -48,7 +51,7 @@
       <div>
         <label for="goal">Goal:</label>
         <select name="goal" id="goal">
-          <option value="select"></option>
+          <option value="select">-</option>
           <option value="loose">Loose</option>
           <option value="maintain">Maintain</option>
           <option value="gain">Gain</option>
@@ -65,7 +68,7 @@
       <div>
         <label for="tdee">Total Calories Needed based on goal:</label>
         <input type="text" id="tdee" name="tdee">
-        <span>/day</span>
+        <span>cal/day</span>
       </div>
     </section>
   </main>
